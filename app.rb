@@ -11,7 +11,8 @@ class App < Sinatra::Base
   end 
   
    post '/puppy' do 
-     erb :index
+     @puppy = Puppy.new(params[:name], params[:breed], params[:age]) #displays the puppy information dynamically
+     erb :display_puppy
    end 
  
 
