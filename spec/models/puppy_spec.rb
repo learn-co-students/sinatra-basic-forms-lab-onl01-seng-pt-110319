@@ -31,8 +31,8 @@ describe 'Puppy class' do
   end
 
   it 'can change puppy age in months (puppy#age=)' do 
-    puppy.age = 3
-    expect(puppy.age).to eq(3)
+    puppy.age = 6
+    expect(puppy.age).to eq(6)
   end
 
   it 'can change puppy name' do
